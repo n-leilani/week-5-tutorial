@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-container{ display: flex;
+    width: 100vw;
+    height: 50vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+    .Item{
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        padding: 10px;
+        background-color: gainsboro;
+        text-align: center;
+        border: 5px solid black;
+        border-radius: 15px;
+    }
+    img{
+        width: 75%;
+    }
+    h1{
+        font-size: medium;
+    }
+    .image-1{
+        border: 3px solid;
+        animation: image1bd 10s infinite;
+    }
+    
+    
+    .image-3{
+        animation: image3wd 5s infinite;
+
+    }
+    .text5{
+        animation: text5cr 10s infinite;
+    }
+
+    @keyframes image1bd{
+        0%{ border-color: red;}
+        20%{border-color: orange;}
+        40%{border-color: yellow;}
+        60%{border-color: green;}
+        80%{border-color: blue;}
+        100%{border-color: blueviolet;}
+    }
+    @keyframes image3wd{
+        0%{width: 75%;}
+        25%{width: 25%;}
+        50%{width: 50%;}
+        75%{width: 25%;}
+        100%{width: 75%;}
+    }
+    @keyframes text5cr{
+        0%{ color: red;}
+        20%{color: orange;}
+        40%{color: yellow;}
+        60%{color: green;}
+        80%{color: blue;}
+        100%{color: blueviolet;}
+/* body{ 
+    animation: backgroundBG 10s infinite;
+}
+h1{ 
+    color: brown;
+}
+img{ animation: imagesize 5s infinite;
+border: 5px solid red;}
+.flex-container{ display: flex;
+width: 100vw;
+height: 50vh;
+background-color: bisque;}
+.Item{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: lightblue;
+}
+/* Define the animation */
+/*@keyframes backgroundBG{
+    /* stage - properties - values */
+   /* 0%{ background-color: red;
+    }
+    20%{background-color: yellow;
+    }
+    50%{ background-color: blue;
+    }
+    100%{background-color: red;
+    }
+}
+@keyframes imagesize{
+    0%{ width: 200px;
+    }
+    50%{ width: 500px;
+    }
+    100%{ width: 200px;}
+} */
